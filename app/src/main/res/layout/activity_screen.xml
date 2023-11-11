@@ -51,7 +51,7 @@
                 android:layout_height="48dp"
                 android:background="@drawable/aracbilgibutton"
                 android:text="Araç Bilgileri"
-                android:textColor="@color/design_default_color_background"
+                android:textColor="@color/black"
                 android:textColorHighlight="@color/design_default_color_error"
                 android:textColorHint="#FE2517"
                 android:textColorLink="#FE2517"
