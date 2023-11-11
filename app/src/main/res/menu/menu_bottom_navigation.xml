@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_bmw"
+        app:showAsAction="ifRoom"
+        android:title="BMW" />
+    <item
+        android:id="@+id/action_mercedes"
+        app:showAsAction="ifRoom"
+        android:title="Mercedes" />
+    <item
+        android:id="@+id/action_nissan"
+        app:showAsAction="ifRoom"
+        android:title="Nissan" />
+    <item
+        android:id="@+id/action_porsche"
+        app:showAsAction="ifRoom"
+        android:title="Porsche" />
+</menu>
