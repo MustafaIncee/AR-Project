@@ -48,10 +48,16 @@ class ScreenActivity : AppCompatActivity() {
 
         val toyotaModels = mutableListOf("Corolla", "Supra")
         val volkswagenModels = mutableListOf("Polo", "Amarok")
+        val nissanModels = mutableListOf("Skyline")
+        val porscheModels = mutableListOf("911")
+
 
 
         markaModelMap["Toyota"] = toyotaModels
         markaModelMap["Volkswagen"] = volkswagenModels
+        markaModelMap["Nissan"] = nissanModels
+        markaModelMap["Porsche"] = porscheModels
+
 
     }
 

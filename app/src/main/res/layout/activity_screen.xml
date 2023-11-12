@@ -45,21 +45,6 @@
                 android:inputType="text" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bilgi"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="164dp"
-                android:layout_height="48dp"
-                android:background="@drawable/aracbilgibutton"
-                android:text="Araç Bilgileri"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/design_default_color_error"
-                android:textColorHint="#FE2517"
-                android:textColorLink="#FE2517"
-                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/goruntule"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="163dp"
