@@ -10,7 +10,7 @@
         android:id="@+id/spinnerToyota"
         android:layout_width="140dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@+id/ToyotaImageButton"
         app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="@+id/ToyotaImageButton"
@@ -40,9 +40,49 @@
         android:id="@+id/spinnerMercedes"
         android:layout_width="140dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@+id/MercedesImageButton"
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="@+id/MercedesImageButton"
         app:layout_constraintTop_toBottomOf="@+id/MercedesImageButton" />
+
+    <ImageButton
+        android:id="@+id/BMWImageButton"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMercedes"
+        app:srcCompat="@drawable/bmw_logo" />
+
+    <Spinner
+        android:id="@+id/spinnerBMW"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/BMWImageButton"
+        app:layout_constraintStart_toStartOf="@+id/BMWImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/BMWImageButton" />
+
+    <ImageButton
+        android:id="@+id/PorscheImageButton"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerToyota"
+        app:srcCompat="@drawable/porsche_logo" />
+
+    <Spinner
+        android:id="@+id/spinnerPorsche"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/PorscheImageButton"
+        app:layout_constraintStart_toStartOf="@+id/PorscheImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/PorscheImageButton" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
