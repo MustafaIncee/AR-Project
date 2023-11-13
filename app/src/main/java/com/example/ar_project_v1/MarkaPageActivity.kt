@@ -15,8 +15,8 @@ class MarkaPageActivity : AppCompatActivity() {
 
     private lateinit var mercedesSpinner: Spinner
     private lateinit var toyotaSpinner: Spinner
-    private lateinit var mercedesImageButton: ImageButton
-    private lateinit var toyotaImageButton: ImageButton
+    private lateinit var BMWSpinner: Spinner
+    private lateinit var PorscheSpinner: Spinner
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,12 +25,13 @@ class MarkaPageActivity : AppCompatActivity() {
 
         mercedesSpinner = findViewById(R.id.spinnerMercedes)
         toyotaSpinner = findViewById(R.id.spinnerToyota)
-        mercedesImageButton = findViewById(R.id.MercedesImageButton)
-        toyotaImageButton = findViewById(R.id.ToyotaImageButton)
+        BMWSpinner = findViewById(R.id.spinnerBMW)
+        PorscheSpinner = findViewById(R.id.spinnerPorsche)
+
 
 
         //MERCEDES SPINNER
-        val itemsMercedes = arrayOf("...", "A Serisi", "C Serisi", "E Serisi")
+        val itemsMercedes = arrayOf("MERCEDES", "A45 AMG", "C200", "S600 Maybach")
         // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
 
         // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
@@ -42,12 +43,32 @@ class MarkaPageActivity : AppCompatActivity() {
         //**************************************************************************************************************************
 
         //TOYOTA SPINNER
-        val itemsToyota = arrayOf("...", "Corolla", "Yaris", "RAV4")
+        val itemsToyota = arrayOf("TOYOTA", "Corolla", "Yaris", "RAV4")
 
         // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
         val adapterToyota = ArrayAdapter(this, android.R.layout.simple_spinner_item, itemsToyota)
         adapterToyota.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         toyotaSpinner.setAdapter(adapterToyota)
+
+        //**************************************************************************************************************************
+
+        //BMW SPINNER
+        val itemsBWM = arrayOf("BMW", "BMW I8", "5 Serisi", "7 Serisi")
+
+        // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
+        val adapterBMW = ArrayAdapter(this, android.R.layout.simple_spinner_item, itemsBWM)
+        adapterBMW.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        BMWSpinner.setAdapter(adapterBMW)
+
+        //**************************************************************************************************************************
+
+        //Porsche SPINNER
+        val itemsPorsche = arrayOf("PORSCHE", "911", "Cayenne", "Panamera")
+
+        // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
+        val adapterPorsche = ArrayAdapter(this, android.R.layout.simple_spinner_item, itemsPorsche)
+        adapterPorsche.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        PorscheSpinner.setAdapter(adapterPorsche)
 
 
         mercedesSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -59,9 +80,9 @@ class MarkaPageActivity : AppCompatActivity() {
             ) {
                 // Seçilen öğe değiştikçe buraya kod ekleyebilirsiniz.
                 val selectedValue = itemsMercedes[position]
-                if (selectedValue.equals("A Serisi")){
+                if (selectedValue.equals("A45 AMG")){
                     Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@MarkaPageActivity, ToyotaCorollaActivity::class.java))
+                    startActivity(Intent(this@MarkaPageActivity, Mercedes_A_Activity::class.java))
                 }
             }
 
