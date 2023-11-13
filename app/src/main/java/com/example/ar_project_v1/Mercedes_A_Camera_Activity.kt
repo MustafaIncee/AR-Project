@@ -14,7 +14,7 @@ class Mercedes_A_Camera_Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nissan_skyline_camera)
+        setContentView(R.layout.activity_mercedes_acamera)
 
         sceneView = findViewById(R.id.sceneView)
         bottomNavigationView = findViewById(R.id.bottomNavigationView)
@@ -23,7 +23,7 @@ class Mercedes_A_Camera_Activity : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.action_nissan -> loadModel("models/mercedes-benz_a45_amg_2018.glb")
+                R.id.action_a45 -> loadModel("models/mercedes-benz_a45_amg_2018.glb")
             }
             true
         }

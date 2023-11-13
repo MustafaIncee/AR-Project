@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="70dp" /> <!-- Radius değerini ihtiyaca göre ayarlayabilirsiniz -->
+    <solid android:color="#7903A9F4" /> <!-- Arka plan rengini ayarlayabilirsiniz -->
+</shape>

@@ -53,7 +53,7 @@ class MarkaPageActivity : AppCompatActivity() {
         //**************************************************************************************************************************
 
         //BMW SPINNER
-        val itemsBWM = arrayOf("BMW", "BMW I8", "5 Serisi", "7 Serisi")
+        val itemsBWM = arrayOf("BMW", "BMW I8", "BMW M2")
 
         // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
         val adapterBMW = ArrayAdapter(this, android.R.layout.simple_spinner_item, itemsBWM)
@@ -87,6 +87,32 @@ class MarkaPageActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+
+        }
+        BMWSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parentView: AdapterView<*>?,
+                selectedItemView: View?,
+                position: Int,
+                id: Long
+            ) {
+                // Seçilen öğe değiştikçe buraya kod ekleyebilirsiniz.
+                val selectedValue = itemsBWM[position]
+
+                if (selectedValue.equals("BMW I8")){
+                    Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@MarkaPageActivity, Bmw_i8_Activity::class.java))
+                }
+                else if (selectedValue.equals("BMW M2")){
+                    Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@MarkaPageActivity, Bmw_m2_Activity::class.java))
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
             }
 

@@ -23,7 +23,7 @@ class NissanSkylineCameraActivity : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.action_nissan -> loadModel("models/nissan_skyline_r34_gt-r.glb")
+                R.id.action_bmw-> loadModel("models/nissan_skyline_r34_gt-r.glb")
             }
             true
         }
