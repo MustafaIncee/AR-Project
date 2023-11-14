@@ -31,7 +31,7 @@ class MarkaPageActivity : AppCompatActivity() {
 
 
         //MERCEDES SPINNER
-        val itemsMercedes = arrayOf("MERCEDES", "A45 AMG", "C200", "S600 Maybach")
+        val itemsMercedes = arrayOf("MERCEDES", "A45 AMG","S600")
         // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
 
         // ArrayAdapter oluşturma ve öğeleri Spinner'a bağlama
@@ -83,6 +83,10 @@ class MarkaPageActivity : AppCompatActivity() {
                 if (selectedValue.equals("A45 AMG")){
                     Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this@MarkaPageActivity, Mercedes_A_Activity::class.java))
+                }
+                else if(selectedValue.equals("S600")){
+                    Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@MarkaPageActivity, Mercedes_S_Activity::class.java))
                 }
             }
 
