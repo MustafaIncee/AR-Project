@@ -43,7 +43,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/dbAd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
@@ -65,7 +64,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/dbSoyad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
@@ -86,7 +84,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/dbAlan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
@@ -107,7 +104,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/dbHastane"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
