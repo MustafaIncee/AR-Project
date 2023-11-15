@@ -1,7 +1,7 @@
 <resources>
 
     <style name="BottomNavigationText">
-        <item name="android:textSize">20sp</item> <!-- Yazı boyutunu ihtiyaca göre ayarlayabilirsiniz -->
+        <item name="android:textSize">15sp</item> <!-- Yazı boyutunu ihtiyaca göre ayarlayabilirsiniz -->
         <item name="android:textAlignment">center</item> <!-- Yazıyı ortalamak için -->
     </style>
 

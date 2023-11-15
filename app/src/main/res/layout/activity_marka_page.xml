@@ -1,88 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgr"
     tools:context=".MarkaPageActivity">
 
-    <Spinner
-        android:id="@+id/spinnerToyota"
-        android:layout_width="140dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/ToyotaImageButton"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="@+id/ToyotaImageButton"
-        app:layout_constraintTop_toBottomOf="@+id/ToyotaImageButton" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
 
-    <ImageButton
-        android:id="@+id/MercedesImageButton"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mercedes_logo1" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/ToyotaImageButton"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/toyota_logo1" />
-
-    <Spinner
-        android:id="@+id/spinnerMercedes"
-        android:layout_width="140dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/MercedesImageButton"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="@+id/MercedesImageButton"
-        app:layout_constraintTop_toBottomOf="@+id/MercedesImageButton" />
-
-    <ImageButton
-        android:id="@+id/BMWImageButton"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="35dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerMercedes"
-        app:srcCompat="@drawable/bmw_logo" />
-
-    <Spinner
-        android:id="@+id/spinnerBMW"
-        android:layout_width="140dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/BMWImageButton"
-        app:layout_constraintStart_toStartOf="@+id/BMWImageButton"
-        app:layout_constraintTop_toBottomOf="@+id/BMWImageButton" />
-
-    <ImageButton
-        android:id="@+id/PorscheImageButton"
-        android:layout_width="140dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerToyota"
-        app:srcCompat="@drawable/porsche_logo" />
-
-    <Spinner
-        android:id="@+id/spinnerPorsche"
-        android:layout_width="140dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/PorscheImageButton"
-        app:layout_constraintStart_toStartOf="@+id/PorscheImageButton"
-        app:layout_constraintTop_toBottomOf="@+id/PorscheImageButton" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="276dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="940dp"
+                android:background="@drawable/bottom_navigation_background2"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="OTOMOBİL MARKALARI"
+                android:textAlignment="center"
+                android:textColor="#E4D717"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/ToyotaImageButton"
+                android:layout_width="187dp"
+                android:layout_height="129dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.928"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13"
+                app:srcCompat="@drawable/toyota_logo1" />
+
+            <!-- İlk eklenen marka -->
+
+            <Spinner
+                android:id="@+id/spinnerToyota"
+                android:layout_width="171dp"
+                android:layout_height="52dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.916"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <ImageView
+                android:id="@+id/VolkswagenButton"
+                android:layout_width="177dp"
+                android:layout_height="134dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.91"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.525"
+                app:srcCompat="@drawable/vwlogo" />
+
+            <Spinner
+                android:id="@+id/spinnervw"
+                android:layout_width="171dp"
+                android:layout_height="52dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.91"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.611" />
+
+            <ImageView
+                android:id="@+id/MercedesImageButton"
+                android:layout_width="155dp"
+                android:layout_height="111dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.07"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.137"
+                app:srcCompat="@drawable/mercedes_logo1" />
+
+            <Spinner
+                android:id="@+id/spinnerMercedes"
+                android:layout_width="171dp"
+                android:layout_height="52dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.247" />
+
+            <ImageView
+                android:id="@+id/PorscheImageButton"
+                android:layout_width="155dp"
+                android:layout_height="111dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.89"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.328"
+                app:srcCompat="@drawable/porsche_logo" />
+
+            <Spinner
+                android:id="@+id/spinnerPorsche"
+                android:layout_width="171dp"
+                android:layout_height="52dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.916"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.426" />
+
+            <ImageView
+                android:id="@+id/HOndaImageButton"
+                android:layout_width="155dp"
+                android:layout_height="111dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.07"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.525"
+                app:srcCompat="@drawable/hondalogo" />
+
+            <Spinner
+                android:id="@+id/spinnerHonda"
+                android:layout_width="171dp"
+                android:layout_height="52dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.611" />
+
+            <ImageView
+                android:id="@+id/BMWImageButton"
+                android:layout_width="155dp"
+                android:layout_height="111dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.328"
+                app:srcCompat="@drawable/bmw_logo" />
+
+            <Spinner
+                android:id="@+id/spinnerBMW"
+                android:layout_width="171dp"
+                android:layout_height="52dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.428" />
+
+            <ImageView
+                android:id="@+id/LamboImageButton"
+                android:layout_width="175dp"
+                android:layout_height="135dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.743"
+                app:srcCompat="@drawable/lambologo" />
+
+            <Spinner
+                android:id="@+id/spinnerlambo"
+                android:layout_width="198dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LamboImageButton"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/btnn"
+                android:layout_width="162dp"
+                android:layout_height="110dp"
+                android:background="#00FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerlambo"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

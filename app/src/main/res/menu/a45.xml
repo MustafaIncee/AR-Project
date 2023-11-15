@@ -2,5 +2,5 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_a45"
-        android:title=" MERCEDES A45 AMG" />
+        android:title=" A45 AMG" />
 </menu>

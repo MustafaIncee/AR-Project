@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".Mercedes_A_Activity">
+    tools:context=".Bmw_i8_Activity">
 
     <ImageView
         android:id="@+id/imageView4"

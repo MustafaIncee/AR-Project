@@ -17,6 +17,7 @@ class Bmw_m2_Activity : AppCompatActivity() {
         m2Button.setOnClickListener {
             val intent = Intent(this, Bmw_m2_Camera_Activity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

@@ -17,6 +17,7 @@ class Bmw_i8_Activity : AppCompatActivity() {
         İ8Button.setOnClickListener {
             val intent = Intent(this, Bmw_i8_Camera_Activity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

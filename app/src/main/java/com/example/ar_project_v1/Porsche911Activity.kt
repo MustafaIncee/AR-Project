@@ -18,6 +18,7 @@ class Porsche911Activity : AppCompatActivity() {
         porscheButton.setOnClickListener {
             val intent = Intent(this, Porsche911CameraActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
