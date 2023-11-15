@@ -202,7 +202,7 @@ class MarkaPageActivity : AppCompatActivity() {
                 }
                 else if (selectedValue.equals("Accord")){
                     Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@MarkaPageActivity, Bmw_m2_Activity::class.java))
+                    startActivity(Intent(this@MarkaPageActivity, Honda_Accord_Activity::class.java))
                 }
             }
 

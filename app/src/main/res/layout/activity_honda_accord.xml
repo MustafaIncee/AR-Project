@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".Honda_Civic_Activity">
+    tools:context=".Honda_Accord_Activity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/civic" />
+        app:srcCompat="@drawable/honda_accord" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -48,7 +48,7 @@
             android:layout_marginLeft="170dp"
             android:layout_marginTop="10dp"
             android:paddingRight="5dp"
-            android:text="158 BG"
+            android:text="192 BG"
             android:textSize="20dp" />
 
 
@@ -69,7 +69,7 @@
             android:layout_marginLeft="170dp"
             android:layout_marginTop="60dp"
             android:paddingRight="5dp"
-            android:text="174 Nm"
+            android:text="260 Nm"
             android:textSize="20dp" />
 
         <TextView
@@ -89,7 +89,7 @@
             android:layout_marginLeft="170dp"
             android:layout_marginTop="110dp"
             android:paddingRight="5dp"
-            android:text="7.2  Sn"
+            android:text="6.8  Sn"
             android:textSize="20dp" />
 
         <TextView
@@ -109,13 +109,13 @@
             android:layout_marginLeft="170dp"
             android:layout_marginTop="160dp"
             android:paddingRight="5dp"
-            android:text="200km/sa"
+            android:text="220km/sa"
             android:textSize="20dp" />
 
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/civicButton"
+        android:id="@+id/accordButton"
         android:layout_width="355dp"
         android:layout_height="55dp"
         android:background="@drawable/border"
