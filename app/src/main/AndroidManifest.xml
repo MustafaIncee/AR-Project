@@ -41,6 +41,12 @@
             android:name=".Mercedes_A_Activity"
             android:exported="false" />
         <activity
+            android:name=".Mercedes_S_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Mercedes_S_Camera_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Porsche911Activity"
             android:exported="false" />
         <activity

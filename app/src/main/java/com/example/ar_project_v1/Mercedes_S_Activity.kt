@@ -18,6 +18,7 @@ class Mercedes_S_Activity : AppCompatActivity() {
         Mercedes_S_Button.setOnClickListener {
             val intent = Intent(this, Mercedes_S_Camera_Activity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
