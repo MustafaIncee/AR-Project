@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:menu="@menu/menu_bottom_navigation" />
+            app:menu="@menu/bmw_m2" />
 
 
 
@@ -36,6 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/menu_bottom_navigation" />
+        app:menu="@menu/bmw_m2" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

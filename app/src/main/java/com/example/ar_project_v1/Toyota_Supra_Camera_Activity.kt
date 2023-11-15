@@ -23,7 +23,7 @@ class Toyota_Supra_Camera_Activity : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.action_bmwi8 -> loadModel("models/toyota_supra_3d_model_free.glb")
+                R.id.action_supra -> loadModel("models/toyota_supra_3d_model_free.glb")
             }
             true
         }

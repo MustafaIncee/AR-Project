@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.action_bmw -> loadModel("models/free_bmw_m3_e30.glb")
+                R.id.action_bmw -> loadModel("models/honda_civic_2022_free_download.glb")
                 //R.id.action_mercedes -> loadModel("models/mercedes_f1_w14_free.glb")
                 //R.id.action_nissan -> loadModel("models/nissan_skyline_r34_gt-r.glb")
                // R.id.action_porsche -> loadModel("models/porsche_911_gt2_rs_with_angle_eyes.glb")
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         modelNode = ArModelNode().apply {
             loadModelGlbAsync(
-                glbFileLocation = "models/porsche_911_gt2_rs_with_angle_eyes.glb"
+                glbFileLocation = "models/honda_civic_2022_free_download.glb"
             ) {
                 sceneView.planeRenderer.isVisible = true
             }

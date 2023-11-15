@@ -14,8 +14,7 @@ class Honda_Civic_Activity : AppCompatActivity() {
         setContentView(R.layout.activity_honda_civic)
 
         civicButton = findViewById(R.id.civicButton)
-
-            civicButton.setOnClickListener {
+        civicButton.setOnClickListener {
             val intent = Intent(this, Honda_Civic_Camera_Activity::class.java)
             startActivity(intent)
             finish()

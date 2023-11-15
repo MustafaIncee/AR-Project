@@ -13,14 +13,14 @@
         android:layout_height="match_parent">
 
         <io.github.sceneview.ar.ArSceneView
-            android:id="@+id/PorscheSceneView"
+            android:id="@+id/sceneView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:focusable="true"
             android:focusableInTouchMode="true" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/PorscheBottomNavigationView"
+            android:id="@+id/bottomNavigationView"
             android:layout_width="411dp"
             android:layout_height="66dp"
             android:layout_gravity="bottom|center_horizontal"
@@ -36,6 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/menu_bottom_navigation" />
+        app:menu="@menu/bmw_m2" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

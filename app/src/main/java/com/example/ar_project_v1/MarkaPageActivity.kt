@@ -264,6 +264,32 @@ class MarkaPageActivity : AppCompatActivity() {
 
 
         }
+        PorscheSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parentView: AdapterView<*>?,
+                selectedItemView: View?,
+                position: Int,
+                id: Long
+            ) {
+                // Seçilen öğe değiştikçe buraya kod ekleyebilirsiniz.
+                val selectedValue = itemsPorsche[position]
+
+                if (selectedValue.equals("911")){
+                    Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@MarkaPageActivity, Porsche911Activity::class.java))
+                }
+                else if (selectedValue.equals("Gallardo")){
+                    Toast.makeText(applicationContext, "Seçilen öğe: $selectedValue", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@MarkaPageActivity, Bmw_m2_Activity::class.java))
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+
+        }
 
 
 

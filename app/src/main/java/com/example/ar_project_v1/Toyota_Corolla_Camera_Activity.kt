@@ -23,7 +23,7 @@ class Toyota_Corolla_Camera_Activity : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.action_bmwi8 -> loadModel("models/toyota-corolla-e170-2017.glb")
+                R.id.action_crll -> loadModel("models/toyota-corolla-e170-2017.glb")
             }
             true
         }

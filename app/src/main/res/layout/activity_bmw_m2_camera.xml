@@ -27,7 +27,7 @@
             android:background="@drawable/bottom_navigation_background"
             app:itemTextAppearanceActive="@style/BottomNavigationText"
             app:itemTextAppearanceInactive="@style/BottomNavigationText"
-            app:menu="@menu/menu_bottom_navigation" />
+            app:menu="@menu/bmw_m2" />
 
     </FrameLayout>
 
